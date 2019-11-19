@@ -9,10 +9,9 @@ def inputVariables():
     print("")
     print("Your name is",name1)
     print("")
-    name2 = input("Enter your name: ")
     ID = input("Enter your student ID number: ")
     course = input("Enter your course name and number: ")
-    print(name2 + "'s ID is " + ID +"\nand is enrolled in " + course)
+    print(name1 + "'s ID is " + ID +"\nand is enrolled in " + course)
     print("")
     
 def arithmetic():
@@ -71,35 +70,35 @@ def nestedIfElse():
     if grade >= 90:
         print("Very Good!")
     else:
-        if grade >= 60:
-        print("Satisfactory.")
-    else:
-        print("Poor")
+        if grade >= 70:
+            print("Satisfactory.")
+        else:
+            print("Poor")
 
 def whileLoops():
     print("While loops are really important in programming, let's see how they work!")
-    number = 1
-	while number <= 10:
-	  if number % 2 == 0:
-	     print(number, end= "  ")
-  		  number = number + 1
+    number: int = 1
+    while number <= 10:
+        if number % 2 == 0:
+         print(number, end= "  ")
+        number = number + 1
 def forLoops():
     print("For loops are used when a condition needs to be checked each iteration.")
     numIterations = 6	
-		for x in range(numIterations):
-	 	   print(x, end=" ")
-    for x in range(5):
-		   print(x, end=" ")
+    for x in range(numIterations):
+        print(x, end=" ")
+        for x in range(5):
+            print(x, end=" ")
 
 def nestedLoops():
     print("This shows how nested loops work")
-    height = int(input("Enter height: ")
+    height = int(input("Enter height in inches: "))
     for row in range(1, height+1):
         for column in range(row):
             print(row, end=" ")
 
 def main():
-    print("Hello! Welcome to my integration project")
+    print("Hello! Welcome to my integration project. Let's run through some programming skills I learned")
     continueProgram = True
     while continueProgram:
         print("Enter choice")
