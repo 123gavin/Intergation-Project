@@ -126,7 +126,6 @@ def while_loops():
 def for_loops():
     """For loops are showed to use number iterations in a loop before
     entering the loop
-
     """
     print("For loops are used when a condition needs to be "
           "checked each iteration.")
