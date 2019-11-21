@@ -116,7 +116,7 @@ def while_loops():
     """
     print("While loops are really important in programming, "
           "let's see how they work!")
-    number= 1
+    number = 1
     while number <= 10:
         if number % 2 == 0:
             print(number, end="  ")
