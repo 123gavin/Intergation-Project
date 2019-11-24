@@ -1,6 +1,7 @@
 """This is my final file for my Intergration Project
 ___author___ = Gavin Carr
 """
+from graphic import *
 
 
 def input_number(message):
@@ -184,6 +185,7 @@ def main():
     """
     # I would like to credit this code to Professor Vanslow for giving us the structure for this style of project in
     # class
+
     print("Hello! Welcome to my integration project. "
           "Let's run through some programming skills I learned throughout the semester.")
     continue_program = True
@@ -221,7 +223,14 @@ def main():
             for_loops()
         if selection == 10:
             nested_loops()
-        elif selection == 11:
+        if selection == 11:
+            # This was a last minute addition accredited to John Zelle's graphics py.file
+            win = GraphWin("My Window", 500, 500)
+            win.setBackground(color_rgb(0, 255, 0))
+            txt = Text(Point(250, 250), "Thank you for playing with my project")
+            txt.draw(win)
+            win.getMouse()
+            win.close()
             continue_program = False
         else:
             print("Try another input! Your options are 1-11.")
