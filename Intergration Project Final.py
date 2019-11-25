@@ -4,9 +4,13 @@ ___author___ = Gavin Carr
 from graphic import *
 
 
+# John Zelle's graphics py.file helped. Messed around with some graphics last minute and added a thank you message
+# when the user selects 11 on the main screen.
+
 def input_number(message):
     """This function makes it so the user can not type a word where integer are needed
     """
+    # Stops the user from breaking my project.
     while True:
         try:
             user_input = int(input(message))
@@ -29,7 +33,8 @@ def hello_world():
 def input_variables():
     """input_variable is used to show how inputs are used in python
     """
-
+    # The purpose of this code is to show off inputs. The user types in information and then computer types out a
+    # sentence with the information provided.
     print("This code shows how to use inputs and variables.")
     name1 = input("What is your name? ")
     print("")
@@ -50,7 +55,8 @@ def arithmetic():
     first_number = input_number("Enter a number: ")
 
     second_number = input_number("Enter another number: ")
-
+    # This code actually does the computing and the print statements just print the out what arithmetic was done so
+    # the user can see.
     sum_answer = first_number + second_number
     difference = first_number - second_number
     product = first_number * second_number
