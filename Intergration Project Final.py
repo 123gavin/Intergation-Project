@@ -74,9 +74,9 @@ def formatting_output():
     """This is the area of the course where we learned how to properly format
     outputs
     """
-
+    # This code formats inputs and calculates cost for the user.
     print("This section shows how to use the format and float functions."
-          "\nThis allows you to format your code in spefic ways.")
+          "\nThis allows you to format your code in different ways.")
     item_name = input("Enter the name of the item: ")
     num_items = input_number("Enter the number of items: ")
     item_cost = float(input_number("Enter the cost of one item: "))
